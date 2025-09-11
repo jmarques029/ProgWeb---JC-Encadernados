@@ -1,3 +1,7 @@
+body {
+    overflow: hidden;
+}
+
 header {
   height: 100vh;
   width: 350px;
@@ -25,9 +29,42 @@ header nav {
     align-items: center;
 }
 
-header nav a {
-    padding: 0.7rem;
-    background-color: var(--secondary);
+header nav ul{
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+header nav a{
     text-decoration: none;
-    border-radius: 0.7rem;
+    color: black;
+    letter-spacing: 3px;
+}
+
+header nav li {
+    margin-bottom: 14px; 
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+form{
+    display: flex;
+    justify-content: flex-end;
+}
+
+form input{
+    padding: 8px;
+    border-radius: 15px;
+    border: 1px solid #E50F6A;
+}
+
+input[type="text"] {
+  color: #E50F6A;
+}
+
+section h2 {
+    margin-top: 30px; 
 }
